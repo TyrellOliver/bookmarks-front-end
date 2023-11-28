@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-
 const Nav = () => {
   return (
     <nav>
@@ -12,7 +11,7 @@ const Nav = () => {
           <Link to={"/bookmarks"}>Bookmarks</Link>
         </li>
         <li>
-          <Link to={"/new"}>Create Bookmarks</Link>
+          <Link to={"/bookmarks/new"}>Create Bookmarks</Link>
         </li>
       </ul>
     </nav>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const [bookmarks, setBookmarks] = useState([]);
@@ -16,7 +17,7 @@ const Index = () => {
   return (
     <div>
       {bookmarks.map((bookmark) => (
-        <div key={bookmark.id}>{bookmark.name}</div>
+        <div key={bookmark.id}><Link to={`/bookmarks/${bookmark.id}`}>{bookmark.name}</Link></div>
       ))}
     </div>
   );
