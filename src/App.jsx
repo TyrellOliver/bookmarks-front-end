@@ -14,7 +14,7 @@ import Edit from "./Pages/Edit";
 
 function App() {
   return (
-    <>
+    <div className="container">
       <Nav />
       <main>
         <Routes>
@@ -25,7 +25,7 @@ function App() {
           <Route path="/bookmarks/:id/edit" element={<Edit />} />
         </Routes>
       </main>
-    </>
+    </div>
   );
 }
 

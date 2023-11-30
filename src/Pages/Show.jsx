@@ -38,6 +38,7 @@ const Show = () => {
       </a>
 
       <div>
+        <button onClick={()=>navigate(`/bookmarks`)}>Back</button>
         <button onClick={() => navigate(`/bookmarks/${id}/edit`)}>Edit</button>
         <button onClick={handleDelete}>Delete</button>
       </div>
